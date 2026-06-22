@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Геймерский дневник</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="logo">GAMER LOG</div>
+      <div class="subtitle">Запиши, что было сегодня</div>
+    </header>
+
+    <main class="content">
+      <section class="panel">
+        <h1>Дневник игрока</h1>
+        <p>Пиши сюда события дня, свои мысли или впечатления.</p>
+
+        <textarea id="entryInput" placeholder="Что у тебя было сегодня..." rows="8"></textarea>
+        <div class="actions">
+          <button id="saveButton">Сохранить</button>
+          <button id="clearButton">Очистить</button>
+        </div>
+      </section>
+
+      <section class="panel log-panel">
+        <h2>Последние записи</h2>
+        <div id="entries"></div>
+      </section>
+    </main>
+
+    <footer class="footer">Локальный геймерский дневник • Записи хранятся в браузере</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
